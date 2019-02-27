@@ -37,8 +37,11 @@ var config = {
   module: {
     rules: conf.rules
   },
-  plugins: conf.plugins,
-  devServer: conf.devServer
+  plugins: conf.plugins
 };
+
+if (conf.devServer) {
+  config.devServer = conf.devServer;
+}
 
 module.exports = config;

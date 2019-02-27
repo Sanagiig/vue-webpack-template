@@ -1,6 +1,9 @@
 import Vue from "vue/dist/vue.common.dev";
-console.log("vue", Vue);
 import App from "./app.vue";
+import element from "element-ui";
+import "element-ui/lib/theme-chalk/index.css";
+
+Vue.use(element);
 var vue = new Vue({
   el: "#app",
   data() {
